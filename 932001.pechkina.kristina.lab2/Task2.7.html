@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title> Task2.7 </title>
+            <style>
+
+                .flex_box{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .stat_block{
+                    position: static;
+                    width: 140px;
+                    height: 90px;
+                    background-color:blueviolet;
+                    color: white;
+                    /* margin-block: 15px; */
+                }
+
+                .rel_one_block{
+                    position: relative;
+                    width: 140px;
+                    height: 90px;
+                    background-color:darkred;
+                    color: white;
+                }
+
+                .rel_two_block{
+                    position: relative;
+                    width: 140px;
+                    height: 90px;
+                    background-color:peru;
+                    color: white;
+                    left: 30px;
+                    bottom: 30px;
+                }
+
+                .rel_three_block{
+                    position: relative;
+                    width: 500px;
+                    height: 330px;
+                    background-color:indianred;
+                    color: white;
+                }
+
+                .abs_block{
+                    position: absolute;
+                    width: 300px;
+                    height: 170px;
+                    right: 0;
+                    top: 90px;
+                    background-color: indigo;
+                    color: white;
+                }          
+
+                .fix_block{
+                    position: fixed;
+                    width: 100px;
+                    height: 100px;
+                    background-color: forestgreen;
+                    color: white;
+                    right: 0;
+                    bottom: 0;
+                }
+
+            </style>
+        </head>
+
+        <body>
+            
+            <div class="flex_box">
+
+                <div class="stat_block">
+                   It's a static div! 
+                </div>
+
+                <div class="rel_one_block">
+                    It's a relative div!
+                </div>
+
+                <div class="rel_two_block">
+                    It's a relative div!
+                </div>
+
+                <div class="rel_three_block">
+                    It's a relative div!
+
+                    <div class="abs_block">
+                        It's an absolute div with relative parent!
+                    </div>
+
+                </div>
+
+                <div class="fix_block">
+                    It's a fixed div!
+                </div>
+
+            </div>
+
+        </body>
+    </html>
+
+
+<!-- #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine -->

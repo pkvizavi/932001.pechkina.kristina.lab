@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Task 4 </title>
+        <style>
+
+        body, html{
+            height: 100%;
+            background-color: #edeef0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            background-color: #507299;
+            padding: 8px;
+            font-size: 0.8em;
+            color: white;
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding-left: 15%;
+        }
+
+        header .logo{
+            margin-left: 250px;
+        }
+
+        main{
+            margin-top: 45px;
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        .nav ul{
+            margin: 30px 0px;
+            width: 200px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav ul a{
+            text-decoration: none;
+            color: #2e5473;
+        }
+
+        .nav ul li{
+            padding: 8px;
+        }
+
+        .nav ul li:hover{
+            background-color: #E1E5EB;
+        }
+
+        .text_block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text_block div{
+            background-color: white;
+            text-align: justify;
+            width: 420px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #d0d0d0;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .text_block p{
+            margin: 0;
+            color: #2e5473;
+            cursor: pointer;
+        }
+
+        .text_block div::selection{
+            background-color: #EDEEF0;
+            color: green;
+        }
+
+
+        .aside{
+            padding: 0;
+            position: sticky;
+            top: 47px;
+        }
+
+        .aside div{
+            background-color: white;
+            width: 160px;
+            margin: 20px 0 0 170px;
+            padding: 10px 0px;
+            border-radius: 5px;
+            border: 1px solid #d0d0d0;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .aside div p{
+            background-color: #EDEEF0;
+            padding: 0;
+            margin: 15px 10px;
+        }
+
+        .aside div h4{
+            padding: 0;
+            margin: 15px 15px;
+        }
+
+        .text_block img{
+            width: 420px;
+        }
+
+        hr.solid {
+            border-top: 3px solid #D0D0D0;
+        }
+
+        .footer{
+            background-color: white;
+            text-align: center;
+            font-size: 0.7em;
+            padding: 5px;
+            margin-top: 5px;
+            color: #949494;
+        }
+
+        .footer h2{
+            margin: 0;
+            font-weight: 300;
+        }
+
+        @media screen and (max-width: 900px) {
+            .aside{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            main{
+                flex-direction: column;
+            }
+            .nav ul{
+                display: flex;
+                margin: 20px auto;
+                width: 80%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .footer{
+                margin-top: 40px;
+            }
+            header .logo{
+                margin-left: 70px;
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="logo.png">
+        </header>
+        <main>
+            <aside class="nav">
+                <ul>
+                    <li><a href="">Main page</a></li>
+                    <li><a href="">Secondary page</a></li>
+                    <li><a href="">Some other page</a></li>
+                    <li><a href="">More pages to the god of pages</a></li>
+                    <li><a href="">The last page</a></li>
+                </ul>
+            </aside>
+            <div class="text_block">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <hr class="solid">
+                    <p style="float: left;">Like</p>
+                    <p style="float: right;">Comment</p>
+                </div>
+                <div>
+                    <img src="cat.png">
+                    <hr class="solid">
+                    <p style="float: left;">Like</p>
+                    <p style="float: right;">Comment</p>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <hr class="solid">
+                    <p style="float: left;">Like</p>
+                    <p style="float: right;">Comment</p>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <hr class="solid">
+                    <p style="float: left;">Like</p>
+                    <p style="float: right;">Comment</p>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <hr class="solid">
+                    <p style="float: left;">Like</p>
+                    <p style="float: right;">Comment</p>
+                </div>
+            </div>
+            <aside class="aside">
+                <div>
+                    <p>Vary important information!</p>
+                    <p>Many, many very usefull and important information!</p>
+                </div>
+                <div>
+                    <h4>Some new header!</h4>
+                    <p>For example, some new and usefull fixed text. And many another text and more text...</p>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <h2>Simple footer (text in the center)</h2>
+        </footer>
+    </body>
+</html>
+
+
+<!-- #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine -->

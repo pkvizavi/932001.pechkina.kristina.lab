@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> Task 5 </title>
+        <style>
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0;
+                margin: 0;
+            }
+
+            main{
+                margin: 0;
+            }
+
+            .news{
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                margin: 0 auto;
+                background-color: #b6f5f5;
+                padding: 20px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                border-bottom: 2px solid black;
+            }
+
+            .news:hover{
+                background-color: #ff5555;
+            }
+
+            .news h1{
+                margin: 0;
+                font-size: 1.5em;
+            }
+
+            .news p{
+                margin: 10px auto;
+            }
+
+            .news .modal-text {
+                display: none;
+            }
+
+            .news button{
+                margin: 0 auto;
+                padding: 7px 8px;
+                background: linear-gradient(180deg, rgba(0,249,0,1) 0%, rgba(0,141,0,1) 100%);
+                border: none;
+                color: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                font-size: 0.9em;
+            }
+
+
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+            
+            .modal .modal-content {
+                text-align: center;
+                background-color: #e1ff73;
+                margin: auto;
+                margin-top: 20%;
+                padding: 20px;
+                width: 25%;
+            }
+
+            .modal .modal-content div{
+                text-align: start;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div id="news1" class="news">
+
+                <h1>Новость 1</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum suscipit sed delectus facere
+                    veritatis autem quisquam unde nam doloribus?
+                </p>
+                
+                <p class="modal-text">
+                    Новость 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores
+                    aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!<br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet
+                    at
+                    voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab
+                    exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam
+                    nostrum,
+                    enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.</p>
+    
+                <button>Открыть всплывающее окно</button>
+
+            </div>
+
+            <div d="news2" class="news">
+
+                <h1>Новость 2</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum suscipit sed delectus facere
+                    veritatis autem quisquam unde nam doloribus?</p>
+                <p class="modal-text">
+                    Новость 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. A, alias.<br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at
+                    voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab
+                    exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum,
+                    enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+                </p>
+                <button>Открыть всплывающее окно</button>
+
+            </div>
+
+            <div d="news3" class="news">
+
+                <h1>Новость 3</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum suscipit sed delectus facere
+                    veritatis autem quisquam unde nam doloribus?</p>
+                <p class="modal-text">
+                    Новость 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores
+                    aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!<br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at
+                    voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab
+                    exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum,
+                    enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+                </p>
+                <button>Открыть всплывающее окно</button>
+
+            </div>
+
+        </main>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h1></h1>
+                <div></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+
+<!-- #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine -->

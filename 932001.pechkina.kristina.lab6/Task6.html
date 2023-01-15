@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> Task 6 </title>
+        <style>
+
+            body, html{
+                font-family: Arial, Helvetica, sans-serif;
+                height: 100%;
+            }
+
+            main{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                margin: 0 auto;
+                background-color: bisque;
+                height: 60%
+            }
+
+            main #buttons{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            main #buttons button{
+                background-color: red;
+                color: white;
+                border: 2px solid black;
+                flex-grow: 1;
+                font-size: 1.5em;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+            main #buttons button:hover{
+                background-color: lightcoral;
+            }
+
+            main #viewer{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            main #viewer #left-img{
+                display: flex;
+                width: 50%;
+                background-color: blue;
+                transition: 1s;
+            }
+            main #viewer #right-img{
+                display: flex;
+                float: right;
+                width: 50%;
+                transition: 1s;
+                background-color: green;
+            }
+
+            img{
+                margin: 20px;
+                height: 70%;
+                max-width: calc(100% - 40px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+
+            <div id="buttons">
+                <button id="left-btn">Левая кнопка</button>
+                <button id="center-btn">Обе две</button>
+                <button id="right-btn">Правая кнопка</button>
+            </div>
+
+            <div id="viewer">
+                <div id="left-img"><img src="cat.jpg" alt="cat"></div>
+                <div id="right-img"><img src="dog.jpg" alt="dog"></div>
+            </div>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
+
+
+<!-- #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine -->

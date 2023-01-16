@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Task 7</title>
+    <style>
+        
+        .triangle {
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            border-width: 100px;
+            border-top: 0;
+            border-bottom: solid blue;
+            border-bottom-width: 100px;
+        }
+    
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 50%;
+        }
+    
+        div {
+            position: absolute;
+            opacity: 0.9;
+        }
+    
+        div:hover {
+            background-color: yellow;
+        }
+    
+        .triangle:hover {
+            background-color: unset;
+            border-bottom-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form onsubmit="submitForm(event)">
+        <input id="number" type="number" style="display: block;" value="1" max="10">
+
+        <button id="sq-btn">Квадрат</button>
+        <button id="tr-btn">Треугольник</button>
+        <button id="cl-btn">Круг</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

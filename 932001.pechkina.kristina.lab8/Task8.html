@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Task 8</title>
+    <style>
+        
+        table{
+            border-spacing: 0px;
+        }
+
+        table tr td{
+            border: 1px solid gray;
+            padding: 0;
+            vertical-align: baseline;
+        }
+
+        input{
+            border:  none;  
+        }
+
+        .controls{
+            border: none;
+            height: 25px;
+            width: 25px;
+        }
+
+        .controls:hover{
+            background-color: rgb(220, 220, 220);
+        }
+
+        button{
+            display: block;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        p{
+            font-family: monospace;
+            margin: 0px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr class="info-row">
+                <td><input type="text" name="name" id="name" autocomplete="off"></td>
+                <td><input type="number" name="number" id="number" autocomplete="off"></td>
+                <td><button id="up" class="controls">&#8593;</button></td>
+                <td><button id="down" class="controls">&#8595;</button></td>
+                <td><button id="delete" class="controls">x</button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button id="add">Добавить элемент</button>
+    <button id="save">Сохранить</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
